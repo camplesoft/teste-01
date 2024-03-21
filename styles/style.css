@@ -1,0 +1,76 @@
+@import url("reset.css");
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+iframe {
+  border-radius: 5px;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+
+  & > p {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+}
+
+.container-cards {
+  padding: 20px;
+  list-style: none;
+
+  display: grid;
+  gap: 10px;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+  grid-auto-rows: 65px;
+
+  & .cards {
+    padding: 20px;
+    border-radius: 6px;
+    color: white;
+    outline: 2px solid white;
+    border-bottom: 2px solid white;
+    outline: 2px solid rgb(92, 92, 92);
+    border-bottom: 2px solid rgb(92, 92, 92);
+    background-color: rgb(19, 107, 179);
+
+    &:hover {
+      transition: background 300ms ease-in-out;
+      cursor: pointe
+      r;
+      background-color: royalblue;
+    }
+
+    &:active {
+      border-bottom-width: 0px;
+      transition: border-bottom-width 40ms ease-in-out;
+    }
+  }
+}
+
+footer {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: royalblue;
+
+  & * {
+    color: white;
+  }
+
+  & a {
+    text-decoration: underline;
+  }
+}
